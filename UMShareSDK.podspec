@@ -7,16 +7,20 @@ Pod::Spec.new do |s|
   s.description  = "基于友盟社会化分享组件,包含精简版QQ SDK、精简版微博SDK、完整微信SDK(带微信支付功能)"
   s.homepage     = "https://github.com/duxinfeng/UMShareSDK"
   s.license      = "MIT"
-  s.author       = { "Xinfeng Du" => "duxinfeng99@gmail.com" }
+  s.author       = { "GX H" => "1076000966@qq.com" }
   s.platform     = :ios, "8.0"
-  s.source       = { :git => "https://github.com/duxinfeng/UMShareSDK.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/MakongYa/UMShareSDK.git", :tag => "#{s.version}" }
   s.requires_arc = true
-  s.dependency "UMCCommon", "~> 2.1.4"
- 
+  s.dependency "UMCommon", "~> 7.3.7"
+  
   s.subspec 'UMShare' do |ss|
     ss.vendored_frameworks = 'UMShare/UMShare.framework'
     ss.frameworks = 'CoreGraphics'
     ss.libraries = 'sqlite3'
+    
+    ss.subspec 'UI' do |sss|
+        sss.vendored_frameworks = 'UMShare/UMSocialUI/UShareUI.framework'
+    end
   end
 
   s.subspec 'Social' do |ss|
