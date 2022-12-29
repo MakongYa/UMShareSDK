@@ -9,5 +9,3 @@ UMCShare 组件中，完整版的微信SDK不包含支付功能，将 UMCShare �
 - UMCShare/UI  (6.10.6)
 - UMCShare/Social/ReducedWeChat (6.10.6)
 - UMCShare/Social/WeChat (6.10.6)
-- UMCShare/Social/ReducedSina (6.10.6)
-- UMCShare/Social/ReducedQQ (6.10.6)

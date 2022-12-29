@@ -25,22 +25,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'Social' do |ss|
     ss.dependency 'UMShareSDK/UMShare'
-
-    ss.subspec 'ReducedQQ' do |sss|
-      sss.vendored_libraries = 'UMShare/SocialLibraries/QQ/*.a'
-      sss.source_files = 'UMShare/SocialLibraries/QQ/*.{h,m}'
-      sss.public_header_files = 'UMShare/SocialLibraries/QQ/*.h'
-      sss.dependency 'UMShareSDK/UMShare'
-    end
-
-    ss.subspec 'ReducedSina' do |sss|
-      sss.vendored_libraries = 'UMShare/SocialLibraries/Sina/*.a'
-      sss.source_files = 'UMShare/SocialLibraries/Sina/*.{h,m}'
-      sss.public_header_files = 'UMShare/SocialLibraries/Sina/*.h'
-      sss.frameworks = 'Photos'
-      sss.dependency 'UMShareSDK/UMShare'
-    end
-
+    
     ss.subspec 'ReducedWeChat' do |sss|
       sss.vendored_libraries = 'UMShare/SocialLibraries/WeChat/*.a'
       sss.source_files = 'UMShare/SocialLibraries/WeChat/*.{h,m}'
